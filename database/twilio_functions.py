@@ -1,13 +1,14 @@
 from twilio.rest import Client
 from twilio.twiml.messaging_response import MessagingResponse
+import os
 
-TWILIO_ACCOUNT_SID = 'ACc0959b76fea556d259638277398977d8'
-TWILIO_AUTH_TOKEN = '744dc88de3147709533a1f03246111ea'
+TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN')
 TWILIO_PHONE_NUMBER = '+12166665403'
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN) #twilio account client
 
 import datetime as dt
-CAVEMANAGER = ("Rippled Cave", "Marianne Russo", 7038877463) #to be hard coded into device
+CAVEMANAGER = ("Desolation Wilderness", "Ranger Maria", 7038877463) #to be hard coded into device
 ##############################################
 ##############################################
 # UPDATE: to be imported somehow from database

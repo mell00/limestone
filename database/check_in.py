@@ -2,7 +2,7 @@ import datetime as dt
 import threading
 import twilio_functions as tw
 
-CAVEMANAGER = ("Rippled Cave", "Marianne Russo", 7038877463) #to be hard coded into device
+CAVEMANAGER = ("Desolation Wilderness", "Ranger Maria", 7038877463) #to be hard coded into device
 ##############################################
 ##############################################
 # UPDATE: to be imported somehow from database

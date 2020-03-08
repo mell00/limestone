@@ -1,9 +1,10 @@
+import os
 from flask import Flask, Response, request, render_template
 from twilio.rest import Client
 from twilio.twiml.messaging_response import MessagingResponse
 
-TWILIO_ACCOUNT_SID = 'ACc0959b76fea556d259638277398977d8'
-TWILIO_AUTH_TOKEN = '744dc88de3147709533a1f03246111ea'
+TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN')
 TWILIO_PHONE_NUMBER = '+12166665403'
 
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN) #create twilio account client
