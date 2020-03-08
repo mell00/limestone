@@ -1,5 +1,6 @@
 import twilio_functions as tw
 import sys
+import os
 import time
 import logging
 from watchdog.observers import Observer
@@ -20,9 +21,10 @@ def observed_change():
 
 
 if __name__ == "__main__":
-    path = "./database.csv" #relative path
+    # path = os.path(__file__), "database.csv" #relative path
+    path = '/Users/Sonia/Development/AthenaHacks/database/database.csv'
     observer = Observer()
-    observer.schedule(observed_change, path, recursive=True)
+    observer.schedule(observed_change, path)
     print("1")
     observer.start()
     try:
