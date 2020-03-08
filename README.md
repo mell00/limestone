@@ -1,4 +1,7 @@
+![logo](logo.png)
+
 # Limestone
+
 
 ## Inspiration
 As one of the few female cave explorers of the deepest caves in the world, team member Sonia immediately brought in the topic of outdoor safety as a potential project she was passionate about. Several recent cave rescues made international and domestic news ⁠— the Thai cave rescue last year, the Indiana student trapped in a cave for 3 days, and the couple who burned their clothes to stay warm after losing their way in a cave ⁠— also sparked passion to do something about these situations. 
@@ -19,18 +22,25 @@ The user connects to Limestone via our Android app. The user is prompted to add 
 Call out time is the time to initiate a rescue and should be liberal to account for unexpected delays. Ex: expected out is 8 PM, call out is 8 AM the next day.
 
 Scenarios:
+
 Visitor exits around expected time and checks out
 * Great! Twilio will send a text confirming check out
+![checkout](twiliocheckout.jpg)
+
 Visitor exits around expected time, forgets to check out
 * Twilio will send a text at a time between expected out and call out time determined by an algorithm
 * If the visitor responds to the text, they are checked out
 * Twilio will send a text confirming check out
+![forgot](twilioforgotcheckout.jpg)
+
 Visitor exits after expected time, but before call out time
 * Twilio will send a text at a time between expected out and call out time determined by an algorithm
 * Visitor exits after expected time and checks out
 * Twilio will send a text confirming check out
+
 Visitor does not exit before call out time
 * Twilio will notify the land manager to initiate a rescue response with the visitor’s name, location entered, and group size
+![rescue](twilioinitiaterescue.jpg)
 
 
 ## How I built it
