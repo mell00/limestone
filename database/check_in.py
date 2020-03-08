@@ -2,19 +2,19 @@ import datetime as dt
 import threading
 import twilio_functions as tw
 
-CAVEMANAGER = ("Desolation Wilderness", "Ranger Maria", 7038877463) #to be hard coded into device
+CAVEMANAGER = ("Desolation Wilderness", "Ranger Maria", 7146810524) #to be hard coded into device
 ##############################################
 ##############################################
 # UPDATE: to be imported somehow from database
 ##############################################
 ##############################################
 check_in = {"photo": "123.jpg", "date_time": dt.datetime(2020,3,7,10,0),
-"user": (123456, "Sonia Meyer", 7038877463), "group_size": 3,
+"user": (123456, "Sonia Meyer", 7146810524), "group_size": 3,
 "expected_out": dt.datetime(2020,3,7,18,0), "call_out": dt.datetime(2020,3,8,8,0)}
 check_out = {"photo": "456.jpg", "date_time": dt.datetime(2020,3,7,18,30),
-"user": (123456, "Sonia Meyer", 7038877463), "group_size": 3}
+"user": (123456, "Sonia Meyer", 7146810524), "group_size": 3}
 missed_checkout = {"photo": "456.jpg", "date_time": dt.datetime(2020,3,7,23,00),
-"user": (123456, "Sonia Meyer", 7038877463), "group_size": 3}
+"user": (123456, "Sonia Meyer", 7146810524), "group_size": 3}
 ##############################################
 ##############################################
 

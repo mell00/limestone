@@ -9,12 +9,16 @@ import check_in
 #############################################################
 ###database triggers this code when status is changed to "out"
 #############################################################
-#if tw.check_user_status("out"): tw.checked_out()
+if tw.check_user_status("out"): tw.checked_out()
 #############################################################
 #############################################################
 
 # Additional goals: every X days the device uploads the entry/exit logs to cave/park management
 
+
+#code below not working
+
+'''
 def observed_change():
     print("OK")
 
@@ -33,3 +37,4 @@ if __name__ == "__main__":
     observer.join()
 
 print("2")
+'''
