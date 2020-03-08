@@ -1,0 +1,9 @@
+* {
+text-align: center;
+
+}
+
+form list[type="text"]{
+width: 100%;
+box-sizing: border-box;
+}
