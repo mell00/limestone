@@ -17,6 +17,10 @@ The user connects to Limestone via our Android app. The user is prompted to add 
 * Call Out Time
 Call out time is the time to initiate a rescue and should be liberal to account for unexpected delays. Ex: expected out is 8 PM, call out is 8 AM the next day.
 
+![Demo](demo.png)
+
+Above shows a very rough outline of a page and will be styled and designed in the future when needed. This is a sample of the form the user fills out before they go on their trip.
+
 Scenarios:
 
 Visitor exits around expected time and checks out
@@ -54,7 +58,3 @@ Lucy - Lucy interfaced the front end and back end by having the app write to a c
 
 Sonia - When a change is observed in the csv, it checks if a new row was added. If so, it will initiate the check_in.py code, which sets various timers using datetime and threader modules to check the visitor status and if not checked out, to enact the various scenarios described above. I wrote an algorithm to determine what time to initiate contact between the expected out and call out times. The check_in.py file calls Twilio functions from another file. I created a Flask app to allow the user to text back to our server and that response will update their status in the csv file.
 
- 
-![Demo](demo.png)
-
-Above shows a very rough outline of a page and will be styled and designed in the future when needed. This is a sample of the form the user fills out before they go on their trip.
