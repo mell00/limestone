@@ -44,3 +44,5 @@ Madison - Madison worked on the front end Android app and interface.
 Lucy - Lucy interfaced the front end and back end by having the app write to a csv file for the back end to interact with.
 
 Sonia - When a change is observed in the csv, it checks if a new row was added. If so, it will initiate the check_in.py code, which sets various timers using datetime and threader modules to check the visitor status and if not checked out, to enact the various scenarios described above. I wrote an algorithm to determine what time to initiate contact between the expected out and call out times. The check_in.py file calls Twilio functions from another file. I created a Flask app to allow the user to text back to our server and that response will update their status in the csv file.
+
+![Demo](demo.png)
