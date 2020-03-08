@@ -48,4 +48,4 @@ Sonia - When a change is observed in the csv, it checks if a new row was added. 
  
 ![Demo](demo.png)
 
-Above shows a rough outline. and will be styled and designed in the future when needed. This is a sample of the form the user fills out before they go on their trip.
+Above shows a very rough outline of a page and will be styled and designed in the future when needed. This is a sample of the form the user fills out before they go on their trip.
